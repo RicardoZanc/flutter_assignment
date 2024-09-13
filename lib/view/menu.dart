@@ -1,3 +1,4 @@
+import 'package:appadsgp1/view/home_page.dart';
 import 'package:flutter/material.dart';
 
 class MenuDrawer extends StatelessWidget {
@@ -16,6 +17,12 @@ class MenuDrawer extends StatelessWidget {
               title: Text("Cursos"),
               onTap: () {
                 //navegar para uma nova tela
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HomePage(),
+                  ),
+                ).then((value) => Navigator.of(context).pop());
               },
             ),
             ListTile(
