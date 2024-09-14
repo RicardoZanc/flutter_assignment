@@ -5,17 +5,7 @@ import 'package:http/http.dart' as http;
 
 class HolidayRepository {
 
-  String getCurrentYear(){
-    DateTime now = DateTime.now();
-    DateTime nowYear = DateTime(now.year);
-    String year = nowYear.toString();
-    return year;
-
-  }
-
-
-
-  Future<List<HolidayEntity>> getAll() async {
+    Future<List<HolidayEntity>> getAll() async {
 
     DateTime now = DateTime.now();
     
