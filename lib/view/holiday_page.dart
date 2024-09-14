@@ -49,8 +49,7 @@ class _HolidayPageState extends State<HolidayPage> {
                             Text(snapshot.data![index].name ?? 'Não informado'),
                           subtitle: Row(
                             children: [
-                            Text(snapshot.data![index].date ?? 'Não informado'),
-                            Text(snapshot.data![index].type ?? 'Não informado'),
+                            Text(controller.dateTimeFormatToStringPtBR(snapshot.data![index].date ?? '----/--/--')),
                             ]
                           ),
                       )
