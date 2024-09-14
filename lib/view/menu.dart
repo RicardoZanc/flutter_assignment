@@ -19,12 +19,12 @@ class MenuDrawer extends StatelessWidget {
               title: Text("Cursos"),
               onTap: () {
                 //navegar para uma nova tela
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const HomePage(),
                   ),
-                ).then((value) => Navigator.of(context).pop());
+                );
               },
             ),
             ListTile(
@@ -32,12 +32,12 @@ class MenuDrawer extends StatelessWidget {
               title: Text("Feriados"),
               onTap: () {
                 //navegar para uma nova tela
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const HolidayPage(),
                   ),
-                ).then((value) => Navigator.of(context).pop());
+                );
               },
             ),
             ListTile(
