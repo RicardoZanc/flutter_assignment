@@ -1,3 +1,4 @@
+import 'package:appadsgp1/view/holiday_page.dart';
 import 'package:appadsgp1/view/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -30,6 +31,12 @@ class MenuDrawer extends StatelessWidget {
               title: Text("Feriados"),
               onTap: () {
                 //navegar para uma nova tela
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HolidayPage(),
+                  ),
+                ).then((value) => Navigator.of(context).pop());
               },
             ),
             ListTile(
